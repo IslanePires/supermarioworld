@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <script src="js/script.js" defer></script>
+
+    <title> Super Mario World </title>
+</head>
+<body>
+
+    <div class="game-board">
+
+        <div class="hud">
+            <span id="score">Score: 0</span>
+            <span id="highScore">Recorde: 0</span>
+        </div>
+
+        <div id="startScreen" class="screen">
+            <h1>Super Mario World</h1>
+            <p>Pressione ENTER para começar</p>
+            <p>ESPAÇO = pular | P = pausar | R = reiniciar</p>
+        </div>
+
+        <div id="gameOverScreen" class="screen" style="display:none;">
+            <h1>Game Over</h1>
+            <p id="finalScore">Score final: 0</p>
+            <p>Pressione R para jogar novamente</p>
+        </div>
+
+        <img src="./images/clouds.png" class="clouds">
+        <img src="./images/mario.webp" class="mario">
+        <img src="./images/pipe.png" class="pipe">
+
+        <div id="pauseText" style="display:none;" class="pause-text"> PAUSADO </div>
+
+        <audio id="bgm" src="./songs/overworld.mp3" loop></audio>
+        <audio id="jumpSound" src="./sfx/jump.mp3"></audio>
+        <audio id="gameOverSound" src="./sfx/death.mp3"></audio>
+        <audio id="pauseSound" src="./sfx/pause.mp3"></audio>
+        <audio id="coinSound" src="./sfx/coin.mp3"></audio>
+
+    </div>
+
+</body>
+</html>
